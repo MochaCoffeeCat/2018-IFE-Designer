@@ -1,0 +1,56 @@
+.setSize(@width: auto, @height: auto){
+    width: @width;
+    height: @height;
+}
+
+.finger{
+    cursor: pointer;
+}
+
+.transition(@type: all, @time: 300ms, @liner: ease) {
+    transition: @type @time @liner;
+    -o-transition: @type @time @liner;
+    -ms-transition: @type @time @liner;
+    -moz-transition: @type @time @liner;
+    -webkit-transition: @type @time @liner;
+}
+
+.demo-container{ width: 300px; margin: 0 auto;
+    .demo-title{
+        text-align: center;
+        .text{
+            display: inline-block;
+            position: relative;
+            height: 45px;
+            line-height: 45px;
+            .transition();
+            &:after{
+                content: '';
+                display: block;
+                background-color: #5ca0eb;
+                .setSize(0, 4px);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                .transition();
+            }
+            &.active{
+                color: #5ca0eb;
+                &:after{
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .demo-btn{
+        display: block;
+        line-height: 30px;
+        margin: 0 auto;
+        border: 1px solid #CCCCCC;
+        background-color: #EFEFEF;
+        color: #333333;
+        .finger();
+        .setSize(100px, 30px);
+    }
+}
