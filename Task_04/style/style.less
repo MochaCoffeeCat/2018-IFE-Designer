@@ -1,0 +1,33 @@
+@import "../../libs/style/common.less";
+
+.demo-container{
+    margin: 0 auto;
+    position: relative;
+    .setSize(250px, 350px);
+    .demo-box{
+        margin: 0 auto;
+        position: absolute;
+        backface-visibility:hidden;
+        transform-style: preserve-3d;
+        .setSize(250px, 350px);
+        .transition(all, 500ms);
+        &.positive{
+            background: url("../images/positive.jpg") no-repeat center;
+            transform: rotateY(0);
+        }
+        &.opposite{
+            background: url("../images/opposite.jpg") no-repeat center;
+            transform: rotateY(180deg);
+        }
+    }
+    &:hover{
+        .demo-box{
+            &.positive{
+                transform: rotateY(180deg);
+            }
+            &.opposite{
+                transform: rotateY(0);
+            }
+        }
+    }
+}
