@@ -1,0 +1,82 @@
+.boxStyle {
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-0 {
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-1 {
+  transform: skew(45deg);
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-2 {
+  transform: scale(0.25, 1);
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-3 {
+  transform: rotate(45deg);
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-4 {
+  transform: translate(10px, 20px);
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}
+.demo-container .demo-box-5 {
+  transform: skew(45deg) scale(0.25, 1) rotate(45deg) translate(10px, 20px);
+  background-color: #F7F6F6;
+  border: 2px solid #EBEBEB;
+  text-align: center;
+  line-height: 96px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 100px;
+}

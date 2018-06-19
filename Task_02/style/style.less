@@ -1,0 +1,39 @@
+.setSize(@width: auto, @height: auto){
+    width: @width;
+    height: @height;
+}
+
+.boxStyle{
+    background-color: #F7F6F6;
+    border: 2px solid #EBEBEB;
+    text-align: center;
+    line-height: 96px;
+    box-sizing: border-box;
+    .setSize(100px, 100px);
+    float: left;
+    margin-right: 100px;
+}
+
+.demo-container{
+    .demo-box-0{ .boxStyle(); }
+    .demo-box-1{
+        transform: skew(45deg);
+        .boxStyle();
+    }
+    .demo-box-2{
+        transform: scale(.25, 1);
+        .boxStyle();
+    }
+    .demo-box-3{
+        transform: rotate(45deg);
+        .boxStyle();
+    }
+    .demo-box-4{
+        transform: translate(10px, 20px);
+        .boxStyle();
+    }
+    .demo-box-5{
+        transform: skew(45deg) scale(.25, 1) rotate(45deg) translate(10px, 20px);
+        .boxStyle();
+    }
+}
