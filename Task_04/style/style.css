@@ -1,0 +1,36 @@
+.finger {
+  cursor: pointer;
+}
+.demo-container {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+  height: 350px;
+}
+.demo-container .demo-box {
+  margin: 0 auto;
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 250px;
+  height: 350px;
+  transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+}
+.demo-container .demo-box.positive {
+  background: url("../images/positive.jpg") no-repeat center;
+  transform: rotateY(0);
+}
+.demo-container .demo-box.opposite {
+  background: url("../images/opposite.jpg") no-repeat center;
+  transform: rotateY(180deg);
+}
+.demo-container:hover .demo-box.positive {
+  transform: rotateY(180deg);
+}
+.demo-container:hover .demo-box.opposite {
+  transform: rotateY(0);
+}
